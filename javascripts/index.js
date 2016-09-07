@@ -1,8 +1,9 @@
 (() => {
-	angular.module("app", []);
+	angular.module("app", ["ngMaterial"]);
 });
 
 (() => {
+	GameController.$inject = [];
 	function GameController() {
 		var ctrl = this;
 		ctrl.deps = {
@@ -14,7 +15,7 @@
 		}
 
 		ctrl.getSituation = function() {
-			
+
 		}
 	}
 	angular.module("app").controller("GameController", GameController);
