@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Test-single-page-game by mynameis7</title>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <!--<link rel="stylesheet" href="stylesheets/github-dark.css"> -->
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -14,17 +13,12 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
-
-  <!-- Angular Material Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    
     <script src="javascripts/index.js"></script>
   </head>
   <body>
-    <!--<div ng-controller="GameController as game">-->
+    <div ng-controller="GameController as game">
 
       <label>Department 1:
         <input type="checkbox" ng-model="game.deps.1">
@@ -42,7 +36,7 @@
         <input type="checkbox" ng-model="game.deps.5">
       </label>
       <button ng-click="game.getSituation()">GO</button>
-    <!--</div>-->
+    </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
